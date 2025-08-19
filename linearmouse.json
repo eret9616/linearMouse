@@ -1,300 +1,120 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.1",
   "schemes" : [
     {
-      "pointer" : {
-        "disableAcceleration" : true,
-        "acceleration" : 0.6875,
-        "speed" : 0.0689655172413792768
-      },
-      "buttons" : {
-        "universalBackForward" : true
-      },
-      "scrolling" : {
-        "modifiers" : {
-          "command" : {
-            "scale" : 10,
-            "type" : "changeSpeed"
-          },
-          "shift" : {
-            "type" : "pinchZoom"
-          }
-        },
-        "speed" : {
-          "vertical" : 0
-        }
-      },
       "if" : {
         "device" : {
-          "vendorID" : "0x5ac",
-          "productID" : "0x343",
           "category" : "trackpad",
-          "productName" : "Apple Internal Keyboard \/ Trackpad"
-        }
-      }
-    },
-    {
-      "scrolling" : {
-        "modifiers" : {
-          "shift" : {
-            "type" : "pinchZoom"
-          },
-          "command" : {
-            "scale" : 8,
-            "type" : "changeSpeed"
-          }
-        }
-      },
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "vendorID" : "0x5ac",
-          "productID" : "0x304",
-          "productName" : "Apple Optical USB Mouse"
+          "productID" : "0x0",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "vendorID" : "0x0"
         }
       },
       "pointer" : {
-        "speed" : 0.7,
-        "acceleration" : 0,
-        "disableAcceleration" : false
-      },
-      "buttons" : {
-        "mappings" : [
-          {
-            "control" : false,
-            "option" : false,
-            "command" : false,
-            "action" : {
-              "keyPress" : [
-                "command",
-                "w"
-              ]
-            },
-            "button" : 3,
-            "shift" : false
-          }
-        ],
-        "universalBackForward" : false
-      }
-    },
-    {
-      "pointer" : {
-        "disableAcceleration" : false,
-        "acceleration" : 0,
-        "speed" : 0.15
+        "acceleration" : 0.5,
+        "disableAcceleration" : true
       },
       "scrolling" : {
-        "speed" : 0,
-        "distance" : {
-          "horizontal" : "29px",
-          "vertical" : "33.6px"
-        },
-        "acceleration" : 1
-      },
-      "buttons" : {
-        "universalBackForward" : true
-      },
-      "if" : {
-        "device" : {
-          "vendorID" : "0x4c",
-          "productName" : "hu’s Magic Mouse",
-          "productID" : "0x323",
-          "serialNumber" : "F8:73:DF:B7:B1:27",
-          "category" : "trackpad"
-        }
-      }
-    },
-    {
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "productID" : "0xf503",
-          "productName" : "VGN Mouse 2.4G Receiver",
-          "vendorID" : "0x3554"
-        }
-      },
-      "scrolling" : {
+        "acceleration" : 1,
+        "distance" : "auto",
         "reverse" : {
           "vertical" : false
         },
-        "acceleration" : {
-          "vertical" : 2.75
-        },
-        "speed" : {
-          "vertical" : 16.06
-        },
-        "modifiers" : {
-          "vertical" : {
-            "command" : {
-              "type" : "changeSpeed",
-              "scale" : 8
-            },
-            "control" : {
-              "type" : "zoom"
-            }
-          }
+        "speed" : 0
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x27da",
+          "productName" : "Karabiner DriverKit VirtualHIDPointing 1.8.0",
+          "serialNumber" : "pqrs.org:Karabiner-DriverKit-VirtualHIDPointing",
+          "vendorID" : "0x16c0"
         }
       },
+      "scrolling" : {
+        "acceleration" : 1,
+        "distance" : 0,
+        "speed" : 0
+      }
+    },
+    {
       "buttons" : {
         "mappings" : [
-
+          {
+            "action" : {
+              "run" : "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"C8B7F92C-2FD3-4477-96D1-BA4CCCC59D9A\"'\n# or: osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"translate Chrome\"'\n# or: osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"C8B7F92C-2FD3-4477-96D1-BA4CCCC59D9A\" with parameter \"Whatever\"'"
+            },
+            "button" : 2,
+            "command" : true,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          },
+          {
+            "action" : "missionControl",
+            "button" : 3,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          }
         ]
       },
-      "pointer" : {
-        "speed" : 0.5
-      }
-    },
-    {
       "if" : {
         "device" : {
-          "productName" : "Magic Trackpad",
-          "serialNumber" : "CC2232600XB10KMAL",
-          "vendorID" : "0x5ac",
-          "category" : "trackpad",
-          "productID" : "0x265"
-        }
-      },
-      "pointer" : {
-        "disableAcceleration" : false,
-        "speed" : 1,
-        "acceleration" : 3.6773
-      },
-      "scrolling" : {
-        "speed" : {
-          "vertical" : 15.41
-        }
-      }
-    },
-    {
-      "scrolling" : {
-        "acceleration" : {
-          "vertical" : 2.67
-        },
-        "speed" : {
-          "vertical" : 20.61
-        },
-        "modifiers" : {
-          "vertical" : {
-            "control" : {
-              "type" : "zoom"
-            },
-            "shift" : {
-              "type" : "auto"
-            },
-            "command" : {
-              "type" : "changeSpeed",
-              "scale" : 6.5
-            }
-          }
-        }
-      },
-      "if" : {
-        "device" : {
-          "productID" : "0xf505",
           "category" : "mouse",
-          "productName" : "VGN Dragonfly 4K Receiver",
-          "vendorID" : "0x3554"
+          "productID" : "0xd038",
+          "productName" : "Keychron 4K Link",
+          "vendorID" : "0x3434"
         }
       },
       "pointer" : {
+        "acceleration" : 0.5,
         "disableAcceleration" : true,
-        "acceleration" : 0.5
+        "speed" : 0.1323
       },
-      "buttons" : {
-        "mappings" : [
-          {
-            "shift" : false,
-            "action" : {
-              "keyPress" : [
-                "command",
-                "h"
-              ]
-            },
-            "command" : false,
-            "button" : 3,
-            "option" : false,
-            "control" : false
+      "scrolling" : {
+        "acceleration" : 1,
+        "distance" : 3,
+        "modifiers" : {
+          "horizontal" : {
+            "command" : {
+              "scale" : 4.5,
+              "type" : "changeSpeed"
+            }
           },
-          {
-            "action" : {
-              "keyPress" : [
-                "command",
-                "w"
-              ]
+          "vertical" : {
+            "command" : {
+              "scale" : 4.5,
+              "type" : "changeSpeed"
             },
-            "option" : false,
-            "command" : false,
-            "button" : 4,
-            "shift" : false,
-            "control" : false
+            "shift" : {
+              "type" : "pinchZoom"
+            }
           }
-        ]
+        },
+        "speed" : 0
       }
     },
     {
-      "buttons" : {
-        "mappings" : [
-          {
-            "button" : 3,
-            "command" : false,
-            "control" : false,
-            "shift" : false,
-            "option" : false,
-            "action" : {
-              "keyPress" : [
-                "command",
-                "h"
-              ]
-            }
-          },
-          {
-            "command" : false,
-            "option" : false,
-            "shift" : false,
-            "control" : false,
-            "action" : {
-              "keyPress" : [
-                "command",
-                "w"
-              ]
-            },
-            "button" : 4
-          }
-        ]
-      },
-      "pointer" : {
-        "speed" : 0.5,
-        "disableAcceleration" : false,
-        "acceleration" : 0
-      },
-      "scrolling" : {
-        "speed" : {
-          "vertical" : 20.72
-        },
-        "modifiers" : {
-          "vertical" : {
-            "shift" : {
-              "type" : "zoom"
-            },
-            "command" : {
-              "type" : "changeSpeed",
-              "scale" : 5.5
-            }
-          }
-        }
-      },
       "if" : {
         "device" : {
-          "productName" : "VGN F1 MOBA",
           "category" : "mouse",
-          "productID" : "0xf506",
-          "vendorID" : "0x3554"
+          "productID" : "0xd046",
+          "productName" : "Keychron M6 4K",
+          "vendorID" : "0x3434"
         }
-      }
-    },
-    {
+      },
+      "pointer" : {
+        "acceleration" : 0.6,
+        "disableAcceleration" : true
+      },
       "scrolling" : {
-        "distance" : 4,
+        "acceleration" : {
+          "vertical" : 1
+        },
         "modifiers" : {
           "vertical" : {
             "command" : {
@@ -303,114 +123,8 @@
             }
           }
         },
-        "reverse" : {
-          "vertical" : false
-        },
-        "acceleration" : 1,
-        "speed" : 0
-      },
-      "if" : {
-        "device" : {
-          "productID" : "0xd030",
-          "vendorID" : "0x3434",
-          "category" : "mouse",
-          "productName" : "Keychron Link "
-        }
-      },
-      "pointer" : {
-        "speed" : 0.23,
-        "disableAcceleration" : false,
-        "acceleration" : 0
-      }
-    },
-    {
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "vendorID" : "0x3434",
-          "productName" : "Keychron Link ",
-          "productID" : "0xd030"
-        },
-        "app" : "com.microsoft.VSCode"
-      },
-      "scrolling" : {
-        "distance" : {
-          "vertical" : 2
-        }
-      }
-    },
-    {
-      "buttons" : {
-        "mappings" : [
-
-        ]
-      },
-      "if" : {
-        "device" : {
-          "productID" : "0xd038",
-          "vendorID" : "0x3434",
-          "category" : "mouse",
-          "productName" : "Keychron 4K Link"
-        }
-      },
-      "pointer" : {
-        "acceleration" : 0,
-        "speed" : 0.23,
-        "disableAcceleration" : false
-      },
-      "scrolling" : {
-        "modifiers" : {
-          "vertical" : {
-            "command" : {
-              "type" : "changeSpeed",
-              "scale" : 5.5
-            },
-            "shift" : {
-              "type" : "auto"
-            }
-          },
-          "horizontal" : {
-            "command" : {
-              "scale" : 5,
-              "type" : "changeSpeed"
-            }
-          }
-        },
-        "reverse" : false,
-        "distance" : {
-          "vertical" : 4,
-          "horizontal" : 7
-        },
-        "acceleration" : 1,
-        "speed" : 0
-      }
-    },
-    {
-      "if" : {
-        "device" : {
-          "productName" : "Keychron 4K Link",
-          "productID" : "0xd038",
-          "category" : "mouse",
-          "vendorID" : "0x3434"
-        },
-        "app" : "com.microsoft.VSCode"
-      },
-      "scrolling" : {
-        "distance" : {
-          "vertical" : 2
-        }
-      }
-    },
-    {
-      "pointer" : {
-        "speed" : 0.2341
-      },
-      "if" : {
-        "device" : {
-          "vendorID" : "0x3434",
-          "productID" : "0xd03f",
-          "productName" : "Keychron M6 ",
-          "category" : "mouse"
+        "speed" : {
+          "vertical" : 11.77
         }
       }
     }
